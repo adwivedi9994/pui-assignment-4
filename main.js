@@ -63,6 +63,7 @@ else {
 		$('#cartItem' +[i]).append('<div id=imagetotal>$ ' + existingPillows[i].total + '</div>');
 		subtotal = subtotal + existingPillows[i].total;
 		$('#cartItem' +[i]).append('<button class=removebutton id=' +[i] + '>X</button>' + "<br><br><br>");
+		$('#cartItem' +[i]).append('<div id=rectangleCart><div>');
 	}
 
 	$("#sub").append("&nbsp;","&nbsp;","&nbsp;", "$ ", subtotal);	
