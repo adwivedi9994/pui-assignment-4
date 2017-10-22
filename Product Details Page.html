@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+	<head>
+		<title>Product Details Page</title>
+		<!--CSS File Link-->
+		<link rel="stylesheet" href="mainstyle.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- JavaScript File-->
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<!--Header / Common through the pages-->
+			<div class="logo">
+				<!--Linking the logo picture-->
+				<a href="Home Page.html"><img src="img/Logo.png"></a>
+			</div>
+			<!--Takes care of the horizontal page navigation of the pages-->
+			<div class="nav">
+				<ul id="inlineList_header">
+					<li><a href="Home Page.html">HOME</a></li>
+					<li><a href="Main Product Page.html">PRODUCTS</a></li>
+					<li>ABOUT US</li>
+					<li>LOGIN</li>
+					<li><img src="img/Search_1_.svg"></li>
+					<a href="Cart.html"><li><img src="img/Shape.svg"></li></a>
+					<div id="numbers">0</div>
+				</ul>	
+			</div>
+			<!--Highter used to signify the page that the user is on-->
+			<div class="highlight1Product"></div>
+		</div>
+			<div class="contents">
+				<h1 id="productPageHeading">Teal Highlights</h1>
+			</div>
+			<div class="mainContentBox">
+				<div class="header1_productdetailspage">
+					<h5>Home / Product / Teal Highlights</h5>
+				</div>
+			<!--Image section of the page-->
+				<div class="picture">
+					<img src="img/a5df60d8dc35fd60085b97619df312f4.png">
+					<img id ="big-pic" src="img/Group%2013.png">
+				</div>
+				<!--Takes care of the content details of the product-->
+				<div class="leftside">
+					<h4>Overview</h4>
+					<div class="overviewDetails">
+						<ul id="overviewDetailsList">
+							<li id="overviewDetailsList">Cover is 60% Polyester, 40% Rayon Derived from Bamboo</li>
+							<li id="overviewDetailsList">Handmade in Pittsburgh</li>
+							<li id="overviewDetailsList">Fully adjustable pillow with our proprietary mix of shredded visco elastic memory foam.</li>
+							<li id="overviewDetailsList">Allows greater ventilation - Promotes proper alignment allowing deeper sleep through the night</li>
+						</ul>
+					</div>
+					<!--Options to customize the pillow-->
+					<h4>Customize</h4>
+					<p>Choose Shape</p>
+					<ul id="inlineList1">
+							<li id="rectangle-click"><img id="rectangle-pic" src="img/Rectangle.png"></li>
+							<li id="round-click"><img src="img/Round.png"></li>
+							<li id="dog-click"><img src="img/Dog.png"></li>
+							<li id="bear-click"><img src="img/Bear.png"></li>
+							<li id="bunny-click"><img src="img/Bunny.png"></li>
+							<li id="cat-click"><img src="img/Cat.png"></li>
+							<li id="custom-click"><img src="img/Custom.png"></li>
+					</ul>
+					<!--Choice of the size-->
+					<p>Choose Size</p>
+						<ul id="inlineList">
+							<li class="circle" id="circles">
+								<p>S</p>
+							</li>
+							<li class="circle" id="circlem">
+								<p>M</p>
+							</li>
+							<li class="circle" id="circlel">
+								<p>L
+								</p>
+							</li>
+							<li class="circle" id="circlexl">
+								<p>XL
+								</p>
+							</li>
+						</ul>
+				<div>
+					<!--Takes care of choosing the backgound color of the pillow-->
+				<div class="backgroundColor">
+					<p>Add / Change Background Color</p>
+					<div class="circle" id="circle1">
+					</div>
+				</div>
+					<!--Adding the Quote to make it unique-->
+					<p>Add Quote</p>
+					<!--Textbox to enter the quote as well as the button-->
+					<input id="tertiarytext" type="text"></input>
+					<button id="Tertiary">OK</button>
+					<div>
+						<p>Quantity</p>
+						<select id="dropdown">
+						  <option value="1">1</option>
+						  <option value="2">2</option>
+						  <option value="3">3</option>
+						  <option value="4">4</option>
+						  <option value="5">5</option>
+						  <option value="6">6</option>
+						</select>
+					</div>
+
+					<!--Button section that has the primary and the secondary button-->
+					<div class="buttons">
+					<button id="Secondary">Preview</button>
+					<!--a href="Cart.html"--><button id="Primary">Add to Cart</button><!--/a-->
+					<p id ="text">Added!<p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Other details of the product that can be found at the bottom of the page-->
+		<div class="OtherDetails">
+			<ul id="inlineListDetails">
+				<li>Details</li>
+				<li>Reviews</li>
+				<li>Possible Styles</li>
+				<li>Similar Items</li>
+			</ul>
+		</div>
+		<!--Line separator and highlighter-->
+		<div class="separator">
+			<div class="highlight"></div>
+			<div class="rectangle"></div>
+		</div>
+		<div class="bottomDetails">
+			<div class="leftColumn">
+				<p class="details1">Dimensions - Rectangle</p>
+				<p class="details1">Dimensions - Roung</p>
+				<p class="details1">Dimensions - Bear</p>
+				<p class="details1">Dimensions - Cat</p>
+				<p class="details1">Dimensions - Bunny</p>
+				<p class="details1">Dimensions - Dog</p>
+			</div>
+			<div class="rightColumn">
+				<p class="details1">Length * Breadth : S (10”*14”) ; M(20”*28”) ; L(30”*42”) ; XL(40”*56”)</p>
+				<p class="details1">Diameter: S (14”) ; M(28”) ; L(42”) ; XL(56”)</p>
+				<p class="details1">Length * Breadth : S (10”*14”) ; M(20”*28”) ; L(30”*42”) ; XL(40”*56”)</p>
+				<p class="details1">Length * Breadth : S (10”*14”) ; M(20”*28”) ; L(30”*42”) ; XL(40”*56”)</p>
+				<p class="details1">Length * Breadth : S (10”*14”) ; M(20”*28”) ; L(30”*42”) ; XL(40”*56”)</p>
+				<p class="details1">Length * Breadth : S (10”*14”) ; M(20”*28”) ; L(30”*42”) ; XL(40”*56”)</p>
+			</div>					
+		</div>
+	</div>
+		<!--Footer / Common throughout the pages--> 
+		<div class="footer">
+			<div class="footerSection">
+				<ul id="inlineList">
+					<li>ABOUT US
+						<p>The Team<br>How We Work<br>Testimonials<br>Careers</p>
+					</li>
+					<li>PRODUCTS
+						<p>Couch Pillow<br>Bed Pillow<br>Round Pillow<br>Floor Pouf Pillow</p>
+					</li>
+					<li>LOCATION
+						<p>#21, 4716 South Negley Street, </br> Opp. New Heaven,</br> Pittsburgh, PA 15213</br>Ph No: 414-452-2182</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
