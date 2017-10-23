@@ -22,12 +22,12 @@
 }
 
 /*Lists that need to be horizontal and not vertical*/
-#inlineList ul {
+#inline-list ul {
   list-style-type: none;
   overflow: hidden;
 }
 
-#inlineList li{
+#inline-list li{
 	display: inline-block;
 }
 
@@ -56,12 +56,12 @@
 }
 
 /*Banner content Details*/
-.leftcontent
+.left-content
 {
 	padding: 250px 50px;
 }
 
-.leftcontent h1
+.left-content h1
 {
 	width: 439px;
 	height: 82px;
@@ -72,7 +72,7 @@
 	color: #1c2333;
 }
 
-.leftcontent h2
+.left-content h2
 {
 	width: 308px;
 	height: 23px;
@@ -149,7 +149,7 @@
 	display: inline-block;
 }
 
-.stepSection
+.step-section
 {
 	background-image: url("img/Product_Page.png");
 	background-size: cover;
@@ -158,19 +158,19 @@
 	padding: 0px;
 }
 
-.stepDetails
+.step-details
 {
 	padding: 50px 50px;
 }
 
-.stepDetails h1
+.step-details h1
 {
 	font-size: 30px;
 	color: #1C2333;
 	letter-spacing: 0.52px;
 }
 
-.stepDetails p
+.step-details p
 {
 	width: 507px;
 	text-align: justify;
@@ -188,7 +188,7 @@
 	background-color: #f7f7f7;
 }
 
-.footerSection
+.footer-section
 {
 	width: 800px;
 	margin:0px auto 0px auto;
@@ -262,7 +262,7 @@
 }
 
 /*Page Heading Style for the Product Pages*/
-#productPageHeading
+#product-page-heading
 {
 	font-size: 30px;
 	color: #1C2333;
@@ -275,7 +275,7 @@
 }
 
 /*Product Grid for the main Product Page=*/
-.productDetails
+.product-details
 {
 	margin-left: 400px;
 	margin-top: 141px;
@@ -344,7 +344,7 @@
 }
 
 /*Content box that takes care of the overview and the customization of the pillow*/
-.mainContentBox
+.main-content-box
 {
 	display: inline-block;
 }
@@ -366,7 +366,7 @@
 }
 
 /*Lining of the pictures as well as the elements in the center*/
-#inlineList1 ul 
+#inline-list1 ul 
 {
   list-style-type: none;
   overflow: hidden;
@@ -375,7 +375,7 @@
   padding-left: 0px;
 }
 
-#inlineList1 li
+#inline-list1 li
 {
 	display: inline-block;
 	padding: 10px;
@@ -403,14 +403,14 @@
 }
 
 /*Takes care of the additional details that are shown in the product page below the product*/
-.bottomDetails
+.bottom-details
 {
 	display: inline-block;
 	margin-left: 300px;
 }
 
 /*Left side of the table*/
-.leftColumn
+.left-column
 {
 	width: 200px;
 	display: inline-block;
@@ -419,7 +419,7 @@
 }
 
 /*Right side of the table*/
-.rightColumn
+.right-column
 {
 	width: 500px;
 	margin: 10px;
@@ -460,7 +460,7 @@
 }
 
 /*Takes care of the pictures as well as the sizes style*/
-#inlineListDetails ul 
+#inline-list-details ul 
 {
   list-style-type: none;
   overflow: hidden;
@@ -468,7 +468,7 @@
   border: 1px;
 }
 
-#inlineListDetails li
+#inline-list-details li
 {
 	display: inline-block;
 	padding-right: 20px;
@@ -479,12 +479,12 @@
 }
 
 /*Sets the initial margin and location for the leftside content*/
-.overviewDetails
+.overview-details
 {
 	float: left;
 }
 
-#overviewDetailsList li
+#overview-detail-list li
 {
 	margin-left: 0px;
 }
@@ -506,13 +506,13 @@
 	margin-left: 120px
 }
 
-#inlineList_header ul {
+#inline-list-header ul {
   list-style-type: none;
   overflow: hidden;
   margin-right: 10px;
 }
 
-#inlineList_header li{
+#inline-list-header li{
 	display: inline-block;
 	margin-right: 5px;
 	margin-bottom: 0px;
@@ -527,7 +527,7 @@ a:link
 } 
 
 /*Adjusting the margin foe the product and the home pages*/
-.highlight1Home
+.highlight1-home
 {
 	width: 60px;
 	height: 3px;
@@ -536,7 +536,7 @@ a:link
 	margin-bottom: 0px;
 }
 
-.highlight1Product
+.highlight1-product
 {
 	width: 78px;
 	height: 3px;
@@ -545,7 +545,7 @@ a:link
 	margin-bottom: 0px;
 }
 
-.header1_productdetailspage h5
+.header1-product-details-page h5
 {
 	/*font-family: Helvetica-Light;*/
 	font-size: 12px;
@@ -558,7 +558,7 @@ a:link
 }
 
 /*Customizing the Add/Change background color part of the overview page*/
-.backgroundColor
+.background-color
 {
 	display: inline-block;
 	height: 80px;
@@ -587,7 +587,7 @@ a:link
 	margin-top: 15px;
 }
 
-.backgroundColor p
+.background-color p
 {
 	display: inline-block;
 	padding-top: 10px;
@@ -604,6 +604,7 @@ input
     background-color: transparent;
 }
 
+/*Cart element styling*/
 #numbers
 {
 	color: white;
@@ -617,7 +618,8 @@ input
 	clear: left;
 }
 
-.cartItemBlock
+/*div for each cart item that is added*/
+.cart-item-block
 {
 	display: inline-block;
 	align-items: center;
@@ -627,13 +629,15 @@ input
 	margin-left: 100px;
 }
 
-.cartItemId
+/*Stores main div with the list elemets*/
+.cart-item-id
 {
 	margin-top: 30px;
 
 }
 
-.cartImages
+/*Images in the cart*/
+.cart-images
 {
 	width:80px;
 	height:80px;
@@ -643,69 +647,61 @@ input
 	float: left;
 }
 
-.listcontainer
+/*List that contains the title, shape, quote and the size of the pillow*/
+.list-container
 {
 	width: 10px;
 	margin:0px;
 }
 
-.listclass ul
+.list-class ul
 {
 	width: 500px;
 	display: inline-block;
 	margin-right: 0px;
 }
-
-.listclass li
+.list-class li
 {
 	width: 150px;
 	list-style: none;
 	padding-left: 20px;
 	margin-left: 120px;
 	margin-right: 0px;
-
-	/*margin-before: 1em;
-    margin-after: 0em;
-    margin-start: 0px;
-    margin-end: 0px;
-    padding-start: 40px;*/
-
-	/*background-color: red;*/
-	/*margin-right: 0px;*/
 }
 
-#imagequantity
+/*Quantity of the pillows*/
+#image-quantity
 {
-	/*float: left;*/
 	margin-left: 170px;
 	display: inline-block;
-/*	vertical-align: center;
-*/}
+}
 
-#imageprice
+/*Individual price of the item*/
+#image-price
 {
 	/*float: left;*/
 	margin-left: 240px;
 	display: inline-block;
 }
 
-#imagetotal
+/*Totaling of the product*/
+#image-total
 {
-	/*float: left;*/
 	margin-left: 270px;
 	display: inline-block;
 }
 
-.removebutton
+/*Remove button positioning*/
+.remove-button
 {
 	margin-left: 100px;
 	border: 0px;
 	background-color: white;
-	/*float: right;*/
 	display: inline-block;
 }
 
-#imagetitle
+/*Image title styling*/
+#image-title
 {
 	padding-top: 20px;
 	margin-left: 10px;
@@ -713,56 +709,38 @@ input
 	display: inline;
 }
 
-#imageshape
+/*Image shape styling*/
+#image-shape
 {
 	float: left;
-	/*position: relative;*/
 	margin-left: 190px;
 	width: auto;
-	/*margin-right: 0px;*/
-	/*right: 100px;*/
     position: absolute;
 }
 
-#imagesize
+/*Image size styling*/
+#image-size
 {
 	float: left;
-	/*position: relative;*/
 	margin-left: 190px;
 	margin-top: 20px;
 	width: auto;
-	/*margin-right: 0px;*/
-	/*right: 100px;*/
     position: absolute;
+}
 
-	/*position: relative;
-	margin-top: 10px;
-	margin-left: 10px;
-	width: 300px;
-*/	/*display: inline;
-*/}
-
-#imagequote
+/*Image quote styling*/
+#image-quote
 {
 	float: left;
-	/*position: relative;*/
 	margin-left: 190px;
 	margin-top: 40px;
 	width: auto;
-	/*margin-right: 0px;*/
-	/*right: 100px;*/
     position: absolute;
-
-	/*position: relative;
-	margin-top: 10px;
-	margin-left: 10px;
-	width: 300px;*/
-	/*display: inline;*/
 }
 
-#primaryCheckout
+/*Checkout button style*/
+#primary-checkout
 {
-	/*float: right;*/
 	background: #1C2333;
 	box-shadow: 0 0 10px 0 rgba(0,0,0,0.12);
 	border-radius: 2px;
@@ -779,7 +757,8 @@ input
 	margin-bottom: 20px;
 }
 
-#finalCalculation
+/*Styling for the titls of the totaling objects*/
+#final-calculation
 {
 	margin-top: 20px;
 	margin-left: 890px;
@@ -788,12 +767,14 @@ input
 	display: inline-block;
 }
 
-#mathCalculation
+/*Takes care of the totaling of the items of the cart*/
+#math-calculation
 {
 	display: inline-block;
 }
 
-.footerCheckout
+/*Footer of the cart page*/
+.footer-checkout
 {
 	width: 1440px;
 	height: 213px;
@@ -801,27 +782,31 @@ input
 	margin-top: 10px;
 }
 
-#inlineListDetailsCart ul
+/*Takes care of the alignment of the product details*/
+#inline-list-details-cart ul
 {
 	list-style-type: none;
   	overflow: hidden;
   	margin-left: 150px;
 }
 
-#inlineListDetailsCart li
+/*Takes care of all the details of the products*/
+#inline-list-details-cart li
 {
 	display: inline-block;
 	margin-left: 200px;
 }
 
-#inlineListCart li
+/*Takes care of the list elemets in the cart*/
+#inline-list-cart li
 {
 	display: inline-block;
 	margin-left: 50px;
 	margin-top: 20px;
 }
 
-#rectangleCart
+/*Separator for all the elements in the cart*/
+#rectangle-cart
 {
 	width: 1100px;
 	border-bottom: solid 1px #ebebeb;
@@ -830,6 +815,7 @@ input
 	margin-top:50px;
 }
 
+/*Highlights the disappearing text*/
 #text
 {
 	float: right;
