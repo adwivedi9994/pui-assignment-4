@@ -33,26 +33,11 @@ else {
 	for(var i=0;i<existingPillows.length;i++)
 	{
 		console.log(existingPillows[i]);
-		// $("#imagesmall").attr("src",existingPillows[i].image);
-		// $("#imagetitle").append(existingPillows[i].title);
-		// $("#imageshape").append(existingPillows[i].shape);
-		// $("#imagesize").append(existingPillows[i].size);
-		// $("#imagequote").append(existingPillows[i].quote);
-		// $("#imagequantity").append(existingPillows[i].quantity);
-		// $("#imageidvprice").append(existingPillows[i].cost);
-		// $("#imagetotal").append(existingPillows[i].total);
-		// $("removebutton").append()
 		$(".cartItemBlock").append('<div class=cartItemId id=cartItem' + [i] + '> </div');
 		$('<img/>',{
 			src: existingPillows[i].image, 
 			class: 'cartImages'
 		}).appendTo($('#cartItem'+[i]));
-		//$('#cartItem' +[i]).append('<div id=imagesmall>' +existingPillows[i].image + '</div>');
-		// $('#cartItem'+[i]).append('<div class=listcontainer id=container' + [i] + '></div>');
-		// $('#container'+[i]).append('<ul class=listclass id=list' + [i] + '></ul>');
-		// $('#list' +[i]).append('<li>' + existingPillows[i].title + '</li>');
-		// $('#list' +[i]).append('<li>Shape: ' + existingPillows[i].shape + '</li>');
-		// $('#list' +[i]).append('<li>Size: ' + existingPillows[i].size + '</li>');
 		$('#list' +[i]).append('<li>Quote: ' + existingPillows[i].quote + '</li>');
 		$('#cartItem' +[i]).append('<div id=imagetitle>' + existingPillows[i].title + '</div>');
 		$('#cartItem' +[i]).append('<div id=imageshape>Shape: ' + existingPillows[i].shape + '</div>');
@@ -71,13 +56,11 @@ else {
 	$("#tax").append("&nbsp;","&nbsp;","&nbsp;","$ ", tax);
 	totalcost = subtotal + tax;
 	$("#final").append("&nbsp;","&nbsp;","&nbsp;","$ ", totalcost);
-	// console.log("subtotal: " + subtotal + " tax: " + tax + " totalcost: " + totalcost);
 }
 
 $("#choice1").click(function(){
 		id=0;
 		name = "Teal Highlights";
-		// console.log(name);
 		localStorage.setItem("itemName",name);
 		localStorage.setItem("itemId",id);
 	});
@@ -137,6 +120,7 @@ $("#choice9").click(function(){
 		localStorage.setItem("itemName",name);
 		localStorage.setItem("itemId",id);
 	});
+
 
 $("#text").hide();
 var shapes, sizes,input;
@@ -210,12 +194,15 @@ var shapes, sizes,input;
 	});
 
 	$("#Primary").click(function(){
-		//var input = document.getElementById('tertiarytext').value;
-		//$("#Primary").hide();
+		$("#Primary").hide();
 		$("#text").show();
 		setTimeout(function() {
-        $("#text").fadeOut(1500);
-   		 }, 3000);
+        $("#text").fadeOut(1000);
+   		 }, 1000);
+		setTimeout(function() {
+        $("#Primary").fadeIn(1000);
+   		 }, 1000);
+		// $("#Primary").show();
 		nameItem = localStorage.getItem("itemName");
 		id = localStorage.getItem("itemId");
 		console.log("ID "+id);
@@ -234,19 +221,6 @@ var shapes, sizes,input;
 		console.log("new Pillow" + newPillow);
 		
   });
-
-	// $("#removebutton").click(function(){
-	// 	localStorage.removeItem("savedPillow");
-	// 	$("#imagesmall").remove();
-	// 	$("#imagetitle").remove();
-	// 	$("#imageshape").remove();
-	// 	$("#imagesize").remove();
-	// 	$("#imagequote").remove();
-	// 	$("#imagequantity").remove();
-	// 	$("#imageidvprice").remove();
-	// 	$("#imagetotal").remove();
-	// 	$("#removebutton").hide();
-	// });
 
 	$(".removebutton").click(function(){
        var arrayPlace = $(this).attr('id');
